@@ -1,0 +1,84 @@
+/* Updated CSS */
+
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden; /* Prevent scrollbars from appearing */
+  background-color: #cce7ff; /* Light blue background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+form h2 {
+  margin-bottom: 24px;
+  font-size: 28px; /* Larger title for emphasis */
+  color: #007bff; /* Accent color similar to Home component */
+}
+
+form input[type="email"],
+form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+form button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  margin-top: 16px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px; /* Slightly larger font size for visibility */
+  transition: background-color 0.3s ease;
+}
+
+form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.login-options {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.option-button {
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.option-button:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}

@@ -1,0 +1,64 @@
+/* Ensure the entire background is white */
+body, html {
+  background-color: #ffffff !important;
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure full height */
+  overflow: hidden; /* Hides both vertical and horizontal scrollbars */
+}
+
+/* Flex container for home page layout */
+.home-container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: #333;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for overlay container */
+.overlay {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin-top: 20px;
+  box-sizing: border-box;
+}
+
+/* Styling for project title */
+.project-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #28a745; /* Green color for title text */
+}
+
+/* Styling for login links */
+.login-links {
+  display: flex;
+  gap: 20px;
+}
+
+/* Green background for login buttons */
+.login-button {
+  padding: 10px 20px;
+  background-color: #28a745; /* Set green background for buttons */
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+  color: inherit; /* Inherit the color from the parent element */
+}
+
+/* Hover effect for login buttons */
+.login-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}

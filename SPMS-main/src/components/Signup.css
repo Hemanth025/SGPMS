@@ -1,0 +1,125 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  overflow-y: auto;
+  background-color: #cce7ff; /* Light blue background */
+  font-family: Arial, sans-serif;
+}
+
+.signup-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full height of the viewport */
+  padding: 20px;
+  width: 100%;
+}
+
+form {
+  background-color: #ffffff;
+  padding: 40px 40px 20px; /* Adjusted bottom padding */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 650px; /* Increased from 600px to 650px for better spacing */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+form h2 {
+  margin: 0 0 24px 0; /* Added margin bottom to separate heading from input fields */
+  font-size: 28px;
+  color: #007bff; /* Accent color */
+  text-align: center;
+}
+
+form input, form select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  width: 100%;
+  padding: 15px;
+  background-color: #007bff; /* Primary color */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+form button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Scrollbar styles */
+.signup-container::-webkit-scrollbar {
+  width: 10px;
+}
+
+.signup-container::-webkit-scrollbar-thumb {
+  background-color: #007bff;
+  border-radius: 10px;
+}
+
+.signup-container::-webkit-scrollbar-thumb:hover {
+  background-color: #0056b3;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .signup-container {
+    padding: 10px;
+  }
+
+  form {
+    padding: 20px;
+    max-width: 90%; /* Adjust width for smaller screens */
+  }
+
+  form input, form select {
+    padding: 12px;
+  }
+
+  form button {
+    padding: 12px;
+  }
+}
+
+/* Additional styling for buttons at the bottom */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%; /* Make container full width */
+  max-width: 650px; /* Align width with form */
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.login-button, .home-button {
+  flex: 1;
+  margin: 0 5px;
+  padding: 15px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Adjust font size for better fit */
+  cursor: pointer;
+}
+
+.login-button:hover, .home-button:hover {
+  background-color: #0056b3;
+}
